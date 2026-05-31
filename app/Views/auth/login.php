@@ -21,7 +21,7 @@
         <?php if (session()->getFlashdata('error')): ?>
             <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
         <?php endif; ?>
-<form action="<?= base_url('login') ?>" method="POST">            <?= csrf_field() ?>
+<form action="https://manalansanhealthcare.great-site.net/login" method="POST">           <?= csrf_field() ?>
             <div class="mb-3">
                 <label class="form-label fw-semibold">Email</label>
                 <input type="email" name="email" class="form-control" value="<?= old('email') ?>" required>
