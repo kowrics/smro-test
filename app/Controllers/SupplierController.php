@@ -40,8 +40,7 @@ return redirect()->to(base_url('suppliers'))->with('success', 'Supplier added.')
 
     public function edit($id)
     {
-        $data['supplier'] = $this->model->findOrFail($id);
-        return view('suppliers/edit', $data);
+$data['supplier'] = $this->model->find($id);        return view('suppliers/edit', $data);
     }
 
     public function update($id)

@@ -51,8 +51,7 @@ return redirect()->to(base_url('batches'))->with('success', 'Batch added.');
 
     public function edit($id)
     {
-        $data['batch']     = $this->model->findOrFail($id);
-        $data['medicines'] = (new MedicineModel())->findAll();
+$data['batch']     = $this->model->find($id);        $data['medicines'] = (new MedicineModel())->findAll();
         return view('batches/edit', $data);
     }
 

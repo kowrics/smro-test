@@ -33,7 +33,7 @@
             <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
         <div class="mt-3 text-center text-muted" style="font-size:12px;">
-            superadmin@smro.com / admin123
+            thea's healthcare system!
         </div>
     </div>
 </div>

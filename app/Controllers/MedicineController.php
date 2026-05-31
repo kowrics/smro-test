@@ -66,7 +66,7 @@ return redirect()->to(base_url('medicines'))->with('success', 'Medicine added su
 
     public function edit($id)
     {
-        $data['medicine']  = $this->medicineModel->findOrFail($id);
+$data['medicine']  = $this->medicineModel->find($id);
         $data['suppliers'] = (new SupplierModel())->findAll();
         return view('medicines/edit', $data);
     }

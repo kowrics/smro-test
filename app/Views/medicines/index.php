@@ -5,7 +5,7 @@
 <div class="card border-0 shadow-sm">
     <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
         <h6 class="mb-0 fw-bold">Medicine List</h6>
-        <a href="<?= base_url('medicines/new') ?> class="btn btn-primary btn-sm">+ Add Medicine</a>
+        <a href="<?= base_url('medicines/new') ?>" class="btn btn-primary btn-sm">+ Add Medicine</a>
     </div>
     <div class="card-body p-0">
         <table class="table table-hover mb-0">
@@ -23,7 +23,7 @@
                 <td><span class="badge <?= $m['stock'] < 50 ? 'bg-danger' : 'bg-success' ?>"><?= $m['stock'] ?></span></td>
                 <td><?= esc($m['supplier_name'] ?? '-') ?></td>
                 <td>
-                    <a href="<?= base_url('medicines/' . $m['id'] . '/edit') ?>/edit" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <a href="<?= base_url('medicines/' . $m['id'] . '/edit') ?>" class="btn btn-sm btn-outline-primary">Edit</a>
                     <form action="<?= base_url('medicines/' . $m['id']) ?>" method="POST" class="d-inline" onsubmit="return confirm('Delete this medicine?')">
                         <?= csrf_field() ?>
                         <input type="hidden" name="_method" value="DELETE">

@@ -47,7 +47,7 @@ return redirect()->to(base_url('users'))->with('success', 'User created.');
 
     public function edit($id)
     {
-        $data['user'] = $this->model->findOrFail($id);
+$data['user'] = $this->model->find($id);
         return view('users/edit', $data);
     }
 
